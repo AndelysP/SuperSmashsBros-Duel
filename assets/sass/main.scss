@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "star_jediregular";
+    src: url("../fonts/starjedi-webfont.woff2") format("woff2"), url("../fonts/starjedi-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+
+    min-height: 100vh;
+    background-size: cover;
+    color: #86dd8d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_logo {
+    padding-top: 2rem;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            max-width: 15%;
+        }
+    }
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h1,
+h2,
+span {
+    font-family: "star_jediregular";
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #86dd8d;
+}
+
+a {
+    transition: all 0.25s;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .character {
+        position: relative;
+        flex-basis: 23%;
+        margin: 2rem 0;
+        filter: drop-shadow(2px 12px 8px #bbbbbb);
+        transition: all 0.5s;
+
+        &:hover {
+            box-shadow: 0 0 6rem #666;
+        }
+
+        img {
+            width: 100%;
+            transition: all 0.5s;
+            vertical-align: middle;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .character-specs-wrapper {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .character-specs {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 30%;
+                margin: 0 auto;
+                padding: 0 1rem;
+                background-color: #333;
+                font-size: 2.5rem;
+
+                .lightsaber-icon {
+                    width: 4.5rem;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+.characters:not(.versus) {
+    .character {
+        cursor: pointer;
+    }
+}
+
+.versus {
+    align-items: center;
+
+    >span {
+        font-size: 6rem;
+    }
+
+    .character {
+        flex-basis: 35%;
+
+        .character-specs-wrapper {
+            .character-specs {
+                width: auto;
+            }
+        }
+    }
+
+    .fight-summary {
+        flex-basis: 25%;
+        text-align: center;
+    }
+}
+
+.character-spec-item {
+    flex-basis: 45%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    progress {
+        width: 100%;
+    }
+}
+
+.attacks {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-right: 2rem;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    margin-right: 1rem;
+    background-color: rgb(227, 255, 249);
+    color: #333;
+    border-radius: 2rem;
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken(whitesmoke, 10);
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+$shadows: (
+    sith: #dd3e46,
+    jedi: #3e8bdd,
+);
+
+@each $key,
+$value in $shadows {
+    .#{$key}-shadow {
+        border-bottom: 0.9rem solid $value;
+    }
+}
+
+#endgame {
+    text-align: center;
+
+    p {
+        font-size: 2rem;
+    }
+}

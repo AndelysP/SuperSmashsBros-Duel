@@ -1,0 +1,190 @@
+[
+    {
+        "id": 1,
+        "name": "Ryu",
+        "puissance": 89,
+        "attacks": [
+            {
+                "name": "Hadôken",
+                "damage": 13
+            },
+            {
+                "name": "Shoryuken",
+                "damage": 22
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 2,
+        "name": "Amphinobi",
+        "puissance": 89,
+        "attacks": [
+            {
+                "name": "Tranche brume",
+                "damage": 16
+            },
+            {
+                "name": "N'eaudachi",
+                "damage": 24
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 3,
+        "name": "Mewtwo",
+        "puissance": 93,
+        "attacks": [
+            {
+                "name": "Rupture mentale",
+                "damage": 24
+            },
+            {
+                "name": "Psykokinese",
+                "damage": 14
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 4,
+        "name": "Luigi",
+        "puissance": 84,
+        "attacks": [
+            {
+                "name": "Poltergeist 5000",
+                "damage": 19
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 5,
+        "name": "Villageois",
+        "puissance": 75,
+        "attacks": [
+            {
+                "name": "Canne à pêche",
+                "damage": 13
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 6,
+        "name": "Link",
+        "puissance": 92,
+        "attacks": [
+            {
+                "name": "Master Sword",
+                "damage": 26
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 7,
+        "name": "Sonic",
+        "puissance": 83,
+        "attacks": [
+            {
+                "name": "Roulade fusante",
+                "damage": 18
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 8,
+        "name": "Yoshi",
+        "puissance": 84,
+        "attacks": [
+            {
+                "name": "Liangue",
+                "damage": 17
+            },
+            {
+                "name": "Planer et Ecraser",
+                "damage": 12
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 9,
+        "name": "Bayonnetta",
+        "puissance": 93,
+        "attacks": [
+            {
+                "name": "Piège à Ours",
+                "damage": 23
+            },
+            {
+                "name": "Tronçonneuse",
+                "damage": 21
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 10,
+        "name": "Plante Piranha",
+        "puissance": 91,
+        "attacks": [
+            {
+                "name": "Mâchouiller",
+                "damage": 22
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 11,
+        "name": "Sephiroth",
+        "puissance": 96,
+        "attacks": [
+            {
+                "name": "Taille aérienne",
+                "damage": 28
+            },
+            {
+                "name": "Octo-frappe",
+                "damage": 23
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 12,
+        "name": "Kirby",
+        "puissance": 85,
+        "attacks": [
+            {
+                "name": "Métamorphose",
+                "damage": 16
+            },
+            {
+                "name": "Martelage",
+                "damage": 20
+            }
+        ],
+        "esquive": 50
+    },
+    {
+        "id": 13,
+        "name": "Peach",
+        "puissance": 87,
+        "attacks": [
+            {
+                "name": "Garde toad",
+                "damage": 6
+            },
+            {
+                "name": "Boule de feu",
+                "damage": 23
+            }
+        ],
+        "esquive": 50
+    }
+]
