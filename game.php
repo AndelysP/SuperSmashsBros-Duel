@@ -67,11 +67,13 @@ include("templates/header.php");
     <h2>Duel</h2>
     <div class="characters versus">
         <div class="character">
-            <img src="assets/img/characters/<?= $player->id ?>_card.png" alt="<?= $player->name ?>">
+            <div class="character_card">
+                <img src="assets/img/characters/<?= $player->id ?>_card.png" alt="<?= $player->name ?>" class="character_picture">
+                <img src="assets/gifs/<?= $player->id ?>.gif" alt="<?= $player->name ?>" class="character_picture-hover">
+            </div>
             <div class="character-specs-wrapper">
                 <div class="character-specs <?= $player->type ?>-shadow">
                     <div class="character-spec-item">
-                        <img class="lightsaber-icon" src="assets/img/<?= $player->type ?>saber.svg" />
                         <span><?= $player->puissance ?></span>
                     </div>
                     <div class="character-spec-item">
@@ -87,11 +89,14 @@ include("templates/header.php");
             <p><?= $fightSummary ?></p>
         </div>
         <div class="character">
-            <img src="assets/img/characters/<?= $ia->id ?>_card.png" alt="<?= $ia->name ?>">
+            <div class="character_card">
+                <img src="assets/img/characters/<?= $ia->id ?>_card.png" alt="<?= $ia->name ?>" class="character_picture">
+                <img src="assets/gifs/<?= $ia->id ?>.gif" alt="<?= $ia->name ?>" class="character_picture-hover">
+            </div>
+
             <div class="character-specs-wrapper">
                 <div class="character-specs <?= $ia->type ?>-shadow">
                     <div class="character-spec-item">
-                        <img class="lightsaber-icon" src="assets/img/<?= $ia->type ?>saber.svg" />
                         <span><?= $ia->puissance ?></span>
                     </div>
                     <div class="character-spec-item">

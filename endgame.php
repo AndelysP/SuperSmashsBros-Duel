@@ -10,11 +10,11 @@ include("templates/header.php");
 session_start();
 ?>
 <main id="endgame">
-
-    <p><?= $_SESSION["winner_character_name"] ?> a gagné</p>
-    <img src="assets/gifs/<?= $_SESSION["winner_character_id"] ?>.gif" alt="<?= $_SESSION["winner_character_name"] ?>">
-
-    <a class="btn" href="./">Nouvelle Partie</a>
+    <div class="over__content">
+        <img src="assets/gifs/<?= $_SESSION["winner_character_id"] ?>.gif" alt="<?= $_SESSION["winner_character_name"] ?> " class="over__content-image">
+        <h1 class="over__content-text"><?= $_SESSION["winner_character_name"] ?> a gagné</h1>
+        <a class="over__content-replay" href="./">Rejouer</a>
+    </div>    
 </main>
 
 <?php include("templates/footer.php"); ?>
