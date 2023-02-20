@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "star_jediregular";
-  src: url("../fonts/starjedi-webfont.woff2") format("woff2"), url("../fonts/starjedi-webfont.woff") format("woff");
+  font-family: "sunny_spells";
+  src: url("../fonts/sunny_spells-webfont.woff2") format("woff2"), url("../fonts/sunny_spells-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -37,9 +37,9 @@ main {
 h1,
 h2,
 span {
-  font-family: "star_jediregular";
+  font-family: "sunny_spells";
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   letter-spacing: 0.25rem;
 }
 
@@ -80,6 +80,27 @@ a {
   filter: drop-shadow(2px 1px 8px #bbbbbb);
   transition: all 0.5s;
 }
+.characters .character .character_card {
+  position: relative;
+  width: 100%;
+}
+.characters .character .character_card .character_picture {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  filter: drop-shadow(2px 12px 8px #bbbbbb);
+}
+.characters .character .character_card .character_picture-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: all 0.4s ease;
+  border-radius: 20px;
+}
 .characters .character .character-specs-wrapper {
   position: absolute;
   bottom: 0;
@@ -90,11 +111,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 30%;
   margin: 0 auto;
-  padding: 0 1rem;
-  background-color: #333;
-  font-size: 2.5rem;
+  padding: 0 2rem;
+  background-color: rgb(51, 51, 51);
+  font-size: 3.5rem;
+}
+.characters .character .character-specs-wrapper .character-specs .blade-icon {
+  width: 8rem;
+  transform: rotate(13deg);
 }
 
 .characters:not(.versus) .character {
@@ -124,8 +148,28 @@ a {
   align-items: center;
   justify-content: space-evenly;
 }
+.character-spec-item .get_health {
+  position: absolute;
+  font-size: 2rem;
+  color: rgb(71, 71, 71);
+}
+.character-spec-item .get_puissance {
+  font-size: 3rem;
+}
 .character-spec-item progress {
   width: 100%;
+  accent-color: #86DD8D;
+  background-color: rgb(235, 232, 232);
+  height: 20px;
+  border-radius: 10px;
+}
+.character-spec-item progress::-webkit-progress-bar {
+  background-color: rgb(235, 232, 232);
+  border-radius: 10px;
+}
+.character-spec-item progress::-webkit-progress-value {
+  background-color: #86DD8D;
+  border-radius: 10px;
 }
 
 .attacks {
@@ -163,7 +207,7 @@ a {
 }
 
 #endgame {
-  padding-top: 25rem;
+  padding-top: 10rem;
   text-align: center;
 }
 #endgame .over__content-replay {
@@ -176,27 +220,9 @@ a {
   border-radius: 1rem;
   padding: 1.5rem 2.25rem;
 }
-
-.character_card {
-  position: relative;
+#endgame .over__content img {
   width: 100%;
-}
-.character_card .character_picture {
-  width: 100%;
-  object-fit: cover;
-  transition: all 0.4s ease;
-  filter: drop-shadow(2px 12px 8px #bbbbbb);
-}
-.character_card .character_picture-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: all 0.4s ease;
-  border-radius: 20px;
+  max-width: 90rem;
 }
 
 /*# sourceMappingURL=main.css.map */

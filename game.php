@@ -74,12 +74,13 @@ include("templates/header.php");
             <div class="character-specs-wrapper">
                 <div class="character-specs <?= $player->type ?>-shadow">
                     <div class="character-spec-item">
-                        <span><?= $player->puissance ?></span>
+                        <img class="blade-icon" src="assets/img/Blade-icon.png" />
+                        <span class="get_puissance"><?= $player->puissance ?></span>
                     </div>
                     <div class="character-spec-item">
                         <label class="d-none" for="playerHealth">Santé :</label>
                         <progress id="playerHealth" max="100" value="<?= $player->getHealth() ?>"><?= $player->getHealth() ?>%</progress>
-                        <span><?= $player->getHealth() ?>%</span>
+                        <span class="get_health"><?= $player->getHealth() ?>%</span>
                     </div>
                 </div>
             </div>
@@ -97,12 +98,13 @@ include("templates/header.php");
             <div class="character-specs-wrapper">
                 <div class="character-specs <?= $ia->type ?>-shadow">
                     <div class="character-spec-item">
-                        <span><?= $ia->puissance ?></span>
+                        <img class="blade-icon" src="assets/img/Blade-icon.png" />
+                        <span class="get_puissance"><?= $ia->puissance ?></span>
                     </div>
                     <div class="character-spec-item">
                         <label class="d-none" for="iaHealth">Santé :</label>
                         <progress id="iaHealth" max="100" value="<?= $ia->getHealth() ?>"><?= $ia->getHealth() ?>%</progress>
-                        <span><?= $ia->getHealth() ?>%</span>
+                        <span class="get_health"><?= $ia->getHealth() ?>%</span>
                     </div>
                 </div>
             </div>
