@@ -29,6 +29,10 @@ function doAttack(Character $attacker, Character $defender, int $index = null)
     $_SESSION["fightSummary"] .= "<p>{$attacker->name} lance une attaque {$attack->name} qui a infligé {$shot} dégâts sur {$defender->name}</p>";
 }
 
+// Réinitialiser le résumé du combat à chaque attaque pour éviter de surcharger le texte
+$_SESSION["fightSummary"] = "";
+
+
 $availableCharacters = [/* Liste des personnages disponibles */];
 foreach ($availableCharacters as $index => $character) {
     if ($character == $_SESSION["player"]) {
