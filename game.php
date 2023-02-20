@@ -76,7 +76,7 @@ include("templates/header.php");
                 <img src="assets/gifs/<?= $player->id ?>.gif" alt="<?= $player->name ?>" class="character_picture-hover">
             </div>
             <div class="character-specs-wrapper">
-                <div class="character-specs <?= $player->type ?>-shadow">
+                <div class="character-specs">
                     <div class="character-spec-item">
                         <img class="blade-icon" src="assets/img/Blade-icon.png" />
                         <span class="get_puissance"><?= $player->puissance ?></span>
@@ -100,7 +100,7 @@ include("templates/header.php");
             </div>
 
             <div class="character-specs-wrapper">
-                <div class="character-specs <?= $ia->type ?>-shadow">
+                <div class="character-specs">
                     <div class="character-spec-item">
                         <img class="blade-icon" src="assets/img/Blade-icon.png" />
                         <span class="get_puissance"><?= $ia->puissance ?></span>

@@ -14,6 +14,19 @@ include("templates/header.php");
             <div class="character selected" data-id="<?= $character["id"] ?>">
                 <img src="assets/img/characters/<?= $character["id"] ?>_card.png" alt="<?= $character["name"] ?>">
             </div>
+
+            <div class="infos">
+                <ul class="spells">
+                    <?php foreach ($character["attacks"] as $spell) { ?>
+                        <li>
+                            <img src="assets/img/spells/<?= $spell["id"] ?>.png" alt="">
+                            <div class="spell-detail">
+                                <p><?= $spell["name"] ?></p>
+                            </div>
+                        </li>
+                    <?php } ?>
+                </ul>
+            </div>
         <?php
         }
         ?>

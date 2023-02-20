@@ -13,8 +13,11 @@ body {
     font-size: 1.6rem;
     min-height: 100vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #86dd8d;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdHAyNTYtYmFja2dyb3VuZC0yNS5qcGc.jpg');
 }
 
 .container_logo {
@@ -84,9 +87,11 @@ h1 {
         filter: drop-shadow(2px 1px 8px #bbbbbb);
         transition: all 0.5s;
 
+
         .character_card {
             position: relative;
-            width: 100%;
+            width: 80%;
+            margin: auto;
 
             .character_picture {
                 width: 100%;
@@ -113,6 +118,8 @@ h1 {
             bottom: 0;
             left: 0;
             right: 0;
+            width: 80%;
+            margin: auto;
 
             .character-specs {
                 display: flex;
@@ -185,6 +192,7 @@ h1 {
         background-color: rgb(235, 232, 232);
         height: 20px;
         border-radius: 10px;
+        box-shadow: inset 0 0 6px 2px #284b2b;
     }
 
     // Pour l'utilisation sur le navigateur Google
@@ -196,23 +204,27 @@ h1 {
     progress::-webkit-progress-value {
         background-color: #86DD8D;
         border-radius: 10px;
-    } 
+        box-shadow: inset 0 0 6px 2px #284b2b;
+    }
 
     // Pour l'utilisation sur le navigateur Firefox
     progress::-moz-progress-bar {
         background-color: #86DD8D;
         border-radius: 10px;
+        box-shadow: inset 0 0 6px 2px #284b2b;
     }
+
     progress::-moz-progress-value {
         background-color: #86DD8D;
         border-radius: 10px;
+        box-shadow: inset 0 0 6px 2px #284b2b;
     }
 
-       
+
 }
 
 
-.attacks {    
+.attacks {
     margin: 2.5rem 0;
     display: flex;
     align-items: center;

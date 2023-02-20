@@ -6,11 +6,13 @@
         "attacks": [
             {
                 "name": "Hadôken",
-                "damage": 13
+                "damage": 13,
+                "id": 1
             },
             {
                 "name": "Shoryuken",
-                "damage": 22
+                "damage": 22,
+                "id": 2
             }
         ],
         "esquive": 50
@@ -21,12 +23,14 @@
         "puissance": 89,
         "attacks": [
             {
-                "name": "Tranche brume",
-                "damage": 16
+                "name": "Tranche Lune",
+                "damage": 16,
+                "id": 3
             },
             {
-                "name": "N'eaudachi",
-                "damage": 24
+                "name": "Cyclone d'eau",
+                "damage": 24,
+                "id": 4
             }
         ],
         "esquive": 50
@@ -38,11 +42,13 @@
         "attacks": [
             {
                 "name": "Rupture mentale",
-                "damage": 24
+                "damage": 24,
+                "id": 5
             },
             {
                 "name": "Psykokinese",
-                "damage": 14
+                "damage": 14,
+                "id": 6
             }
         ],
         "esquive": 50
@@ -54,7 +60,8 @@
         "attacks": [
             {
                 "name": "Poltergeist 5000",
-                "damage": 19
+                "damage": 19,
+                "id": 7
             }
         ],
         "esquive": 50
@@ -66,7 +73,8 @@
         "attacks": [
             {
                 "name": "Canne à pêche",
-                "damage": 13
+                "damage": 13,
+                "id": 8
             }
         ],
         "esquive": 50
@@ -78,7 +86,8 @@
         "attacks": [
             {
                 "name": "Master Sword",
-                "damage": 26
+                "damage": 26,
+                "id": 9
             }
         ],
         "esquive": 50
@@ -89,8 +98,9 @@
         "puissance": 83,
         "attacks": [
             {
-                "name": "Roulade fusante",
-                "damage": 18
+                "name": "Attaque Tourbillon",
+                "damage": 18,
+                "id": 10
             }
         ],
         "esquive": 50
@@ -102,11 +112,13 @@
         "attacks": [
             {
                 "name": "Liangue",
-                "damage": 17
+                "damage": 17,
+                "id": 11
             },
             {
-                "name": "Planer et Ecraser",
-                "damage": 12
+                "name": "Jet d'œuf",
+                "damage": 12,
+                "id": 12
             }
         ],
         "esquive": 50
@@ -118,11 +130,13 @@
         "attacks": [
             {
                 "name": "Piège à Ours",
-                "damage": 23
+                "damage": 23,
+                "id": 13
             },
             {
                 "name": "Tronçonneuse",
-                "damage": 21
+                "damage": 21,
+                "id": 14
             }
         ],
         "esquive": 50
@@ -134,7 +148,8 @@
         "attacks": [
             {
                 "name": "Mâchouiller",
-                "damage": 22
+                "damage": 22,
+                "id": 15
             }
         ],
         "esquive": 50
@@ -146,11 +161,13 @@
         "attacks": [
             {
                 "name": "Taille aérienne",
-                "damage": 28
+                "damage": 28,
+                "id": 16
             },
             {
                 "name": "Octo-frappe",
-                "damage": 23
+                "damage": 23,
+                "id": 17
             }
         ],
         "esquive": 50
@@ -161,12 +178,14 @@
         "puissance": 85,
         "attacks": [
             {
-                "name": "Métamorphose",
-                "damage": 16
+                "name": "Etoile scintillante",
+                "damage": 16,
+                "id": 18
             },
             {
                 "name": "Martelage",
-                "damage": 20
+                "damage": 20,
+                "id": 19
             }
         ],
         "esquive": 50
@@ -178,11 +197,13 @@
         "attacks": [
             {
                 "name": "Garde toad",
-                "damage": 6
+                "damage": 10,
+                "id": 20
             },
             {
-                "name": "Boule de feu",
-                "damage": 23
+                "name": "Coeur ardent",
+                "damage": 23,
+                "id": 21
             }
         ],
         "esquive": 50
