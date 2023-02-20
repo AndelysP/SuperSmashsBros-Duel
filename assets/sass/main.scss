@@ -11,7 +11,6 @@ html {
 
 body {
     font-size: 1.6rem;
-
     min-height: 100vh;
     background-size: cover;
     color: #86dd8d;
@@ -50,6 +49,7 @@ span {
 h1 {
     font-size: 4rem;
     color: #86dd8d;
+    font-family: "sunny_spells";
 }
 
 .characters {
@@ -187,6 +187,7 @@ h1 {
         border-radius: 10px;
     }
 
+    // Pour l'utilisation sur le navigateur Google
     progress::-webkit-progress-bar {
         background-color: rgb(235, 232, 232);
         border-radius: 10px;
@@ -195,7 +196,19 @@ h1 {
     progress::-webkit-progress-value {
         background-color: #86DD8D;
         border-radius: 10px;
+    } 
+
+    // Pour l'utilisation sur le navigateur Firefox
+    progress::-moz-progress-bar {
+        background-color: #86DD8D;
+        border-radius: 10px;
     }
+    progress::-moz-progress-value {
+        background-color: #86DD8D;
+        border-radius: 10px;
+    }
+
+       
 }
 
 
