@@ -58,14 +58,18 @@ h1 {
   justify-content: space-between;
 }
 .characters .selected {
-  position: relative;
   flex-basis: 23%;
   margin: 2rem 0;
   filter: drop-shadow(2px 12px 8px #bbbbbb);
   transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
 }
 .characters .selected:hover {
   filter: drop-shadow(0 0 6px #666);
+}
+.characters .selected:hover .spells {
+  display: block;
 }
 .characters .selected img {
   width: 100%;
@@ -75,8 +79,14 @@ h1 {
 .characters .selected img:hover {
   transform: scale(1.05);
 }
+.characters .selected .spells {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  list-style-type: none;
+}
 .characters .character {
-  position: relative;
   filter: drop-shadow(2px 1px 8px #bbbbbb);
   transition: all 0.5s;
 }

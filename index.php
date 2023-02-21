@@ -12,15 +12,14 @@ include("templates/header.php");
         foreach ($characters as $character) {
         ?>
             <div class="character selected" data-id="<?= $character["id"] ?>">
-                <img src="assets/img/characters/<?= $character["id"] ?>_card.png" alt="<?= $character["name"] ?>">
-            </div>
 
-            <div class="infos">
+                <img src="assets/img/characters/<?= $character["id"] ?>_card.png" alt="<?= $character["name"] ?>">
+
                 <ul class="spells">
                     <?php foreach ($character["attacks"] as $spell) { ?>
                         <li>
                             <img src="assets/img/spells/<?= $spell["id"] ?>.png" alt="">
-                            <div class="spell-detail">
+                            <div class="spell-name">
                                 <p><?= $spell["name"] ?></p>
                             </div>
                         </li>

@@ -22,3 +22,4 @@ for (let i = 0; i < cards.length; i++) {
     })
 }
 
+// Affichage des compétences au survol
