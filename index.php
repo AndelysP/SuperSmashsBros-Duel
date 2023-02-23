@@ -13,7 +13,11 @@ include("templates/header.php");
         ?>
             <div class="character selected" data-id="<?= $character["id"] ?>">
 
-                <img src="assets/img/characters/<?= $character["id"] ?>_card.png" alt="<?= $character["name"] ?>">
+                <audio id="myAudio">
+                    <source src="./assets/sounds/select_sound.mp3" type="audio/mpeg">
+                </audio>
+
+                <img src="assets/img/characters/<?= $character["id"] ?>_card.png" alt="<?= $character["name"] ?>" onmouseover="playSound()">
 
                 <ul class="spells">
                     <?php foreach ($character["attacks"] as $spell) { ?>

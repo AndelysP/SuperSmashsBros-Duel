@@ -1,7 +1,7 @@
 const characters = document.querySelectorAll(".selected");
 for (const selected of characters) {
     selected.addEventListener("click", () => {
-        document.location.href=`./new.php?id=${selected.dataset.id}`;
+        document.location.href = `./new.php?id=${selected.dataset.id}`;
     });
 }
 
@@ -22,4 +22,8 @@ for (let i = 0; i < cards.length; i++) {
     })
 }
 
-// Affichage des compétences au survol
+// Son au survol
+var audio = document.getElementById("myAudio");
+function playSound() {
+    audio.play();
+}
